@@ -37,12 +37,13 @@ function calcPrimes() {
 	clearInterval(work);
 	work = setInterval(function () {
 		c = Math.floor(Math.random() * 6);
-		display(n, c);
 
 		n = Math.floor(Math.random() * UpBound) + 1;
 		while (selected.indexOf(n) != -1) {
 			n = Math.floor(Math.random() * UpBound) + 1;
 		}
+		
+		display(n, c);
 	}, 75);
 }
 
